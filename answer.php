@@ -30,12 +30,13 @@
         <div class="page-content-php">
           <div id="user-info">
             <?php
+            const TAX_RATE = 0.18
             $workHours = $_POST["work-hours"];
             $hourlyRate = $_POST["hourly-rate"];
 
             // process
-            $payOfSalary = $workHours * $hourlyRate * (1.00 - 0.18);
-            $taxesOfSalary = $workHours * $hourlyRate * 0.18;
+            $payOfSalary = $workHours * $hourlyRate * (1.00 - TAX_RATE);
+            $taxesOfSalary = $workHours * $hourlyRate * TAX_RATE;
 
             // output
             echo "If you work = $ " . $workHours . " and your hourly rate is = $ " . $hourlyRate . "";
