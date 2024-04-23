@@ -30,7 +30,7 @@
         <div class="page-content-php">
           <div id="user-info">
             <?php
-            const TAX_RATE = 0.18
+            const TAX_RATE = 0.18;
             $workHours = $_POST["work-hours"];
             $hourlyRate = $_POST["hourly-rate"];
 
